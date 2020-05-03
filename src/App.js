@@ -97,7 +97,7 @@ class App extends Component {
         .then(count => {
           this.setState(Object.assign(this.state.user, {entries: count}))
         })
-        .catch(err => console.log(err));
+        .catch(err => console.log('failed to fetch'));
       }
       this.displayFaceBox(this.calculateFaceLocation(response))
     })
